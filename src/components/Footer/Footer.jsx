@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import './css/index.css';
 
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <div className="ad-container ad-bottom">
-          {/* <div class="ad-left">왼쪽</div>
-          <div class="ad-right">오른쪽</div> */}
+      <div className='footer'>
+        <div className="ad-container">
+          <div className="ad-left"></div>
+          <div className="ad-right"></div>
         </div>
       </div>
     );

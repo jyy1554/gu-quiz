@@ -9,7 +9,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: lightgray;
 }
 
 #root .welcome .wrapper {
@@ -43,7 +42,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 16px;
 }
 
 #root .welcome .wrapper .title-container .main-title {

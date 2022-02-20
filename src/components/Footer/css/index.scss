@@ -1,0 +1,21 @@
+#root {
+  .footer {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+
+    .ad-container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .ad-left {
+
+      }
+      .ad-right {
+
+      }
+    }
+  }
+}
