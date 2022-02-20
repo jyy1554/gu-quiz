@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './css/index.css';
 
 function Result() {
+  const navigate = useNavigate();
+
+  const __goMain = useCallback(
+    () => {
+      navigate('/');
+    },
+    [navigate],
+  )
+
   return (
     <div className='result'>
       <div className='wrapper'>
@@ -11,7 +21,7 @@ function Result() {
             <div className='score'>1점!</div>
             <div className='msg'>아이쿠 손이 미끄러졌네ㅠ.ㅠ</div>
           </div>
-          <div className='goback-btn'>
+          <div className='goback-btn' onClick={__goMain}>
             <button className='go-welcome'>메인으로</button>
           </div>
         </div>
