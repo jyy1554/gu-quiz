@@ -10,14 +10,54 @@ $gu-quiz-blue: #1976d2;
     .wrapper {
       width: 100%;
       height: 80vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50% / 100%, url(https://www1.president.go.kr/images/cheongwadae/pic_introduction_01_01.jpg);
-      background-position: center;
-      background-size: cover;
+      background-color: black;
+
+      .gu-img {
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        opacity: 0.4;
+      }
+
+      .score-container {
+        position: absolute;
+        padding-top: 20px;
+        right: 20px;
+        z-index: 2;
+
+        .ur-score-is {
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: bolder;
+          color: white;
+        }
+
+        .score {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bolder;
+          color: white;
+          cursor: default;
+          transition: 0.3s;
+        }
+
+        .score:hover {
+          transform: scale(1.3);
+        }
+
+      }
 
       .map-icon {
         position: absolute;
         padding-top: 15px;
-        right: 15px;
+        left: 15px;
+        transition: 0.5s;
+        z-index: 2;
+      }
+
+      .map-icon :hover {
+        opacity: 0.8;
       }
 
       .quiz-container {
@@ -26,8 +66,9 @@ $gu-quiz-blue: #1976d2;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        z-index: 2;
 
-        .quiz {
+        .gu-name {
           font-size: 65px;
           font-weight: bold;
           color: white;
@@ -47,7 +88,8 @@ $gu-quiz-blue: #1976d2;
           justify-content: center;
           border-radius: 2rem;
           width: 20rem;
-          background-color: rgba(250, 241, 241, 0.6);
+          background-color: rgba(250, 241, 241, 0.7);
+          z-index: 2;
 
           input {
             width: 100%;
@@ -57,7 +99,6 @@ $gu-quiz-blue: #1976d2;
             font-weight: bolder;
             background-color: transparent;
             padding: 0px 20px;
-            z-index: 3;
           }
 
           input::placeholder {

@@ -14,16 +14,58 @@
 #root .game .wrapper {
   width: 100%;
   height: 80vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) 50% 50%/100%, url(https://www1.president.go.kr/images/cheongwadae/pic_introduction_01_01.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50%/100%, url(https://www1.president.go.kr/images/cheongwadae/pic_introduction_01_01.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: black;
+}
+
+#root .game .wrapper .gu-img {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
+}
+
+#root .game .wrapper .score-container {
+  position: absolute;
+  padding-top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+#root .game .wrapper .score-container .ur-score-is {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+#root .game .wrapper .score-container .score {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
+  cursor: default;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#root .game .wrapper .score-container .score:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 #root .game .wrapper .map-icon {
   position: absolute;
   padding-top: 15px;
-  right: 15px;
+  left: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+#root .game .wrapper .map-icon :hover {
+  opacity: 0.8;
 }
 
 #root .game .wrapper .quiz-container {
@@ -41,9 +83,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 2;
 }
 
-#root .game .wrapper .quiz-container .quiz {
+#root .game .wrapper .quiz-container .gu-name {
   font-size: 65px;
   font-weight: bold;
   color: white;
@@ -68,7 +111,8 @@
           justify-content: center;
   border-radius: 2rem;
   width: 20rem;
-  background-color: rgba(250, 241, 241, 0.6);
+  background-color: rgba(250, 241, 241, 0.7);
+  z-index: 2;
 }
 
 #root .game .wrapper .quiz-container .answer-container input {
@@ -79,7 +123,6 @@
   font-weight: bolder;
   background-color: transparent;
   padding: 0px 20px;
-  z-index: 3;
 }
 
 #root .game .wrapper .quiz-container .answer-container input::-webkit-input-placeholder {
