@@ -1,5 +1,5 @@
 #root {
-  .welcome {
+  .result {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -8,38 +8,45 @@
     .wrapper {
       width: 100%;
       height: 80vh;
-      margin: 10px 0px;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50% / 100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) 50% 50% / 100%, url(https://media.giphy.com/media/l1J3UU9QBHDaGr052/giphy.gif);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
 
-      .info-icon {
-        position: absolute;
-        padding-top: 15px;
-        right: 15px;
-      }
-
-      .title-container {
+      .result-container {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        .main-title {
-          font-size: 65px;
-          font-weight: bold;
-          color: white;
-          margin-bottom: 16px;
-        }
-        .sub-title {
-          margin-bottom: 20px;
-          font-weight: bold;
-          color: gray;
+        .score-container {
+
+          .tell-score {
+            font-size: 3rem;
+            // margin-bottom: 0.5rem;
+            color: white;
+            font-weight: bold;
+          }
+
+          .score {
+            font-size: 10rem;
+            color: goldenrod;
+            // margin-bottom: 0.5rem;
+          }
+
+          .msg {
+            font-size: 1.2rem;
+            font-weight: bolder;
+            color: lightgray;
+            margin-bottom: 2rem;
+            text-align: center;
+          }
+
         }
 
-        .start-btn {
-          .game-start {
+        .goback-btn {
+
+          .go-welcome {
             min-width: 10rem;
             font-size: 1.5rem;
             font-weight: bolder;
@@ -53,7 +60,7 @@
             transition: all 0.5s ease 0s;
           }
 
-          .game-start:hover {
+          .go-welcome:hover {
             color: black;
             background-color: white;
           }

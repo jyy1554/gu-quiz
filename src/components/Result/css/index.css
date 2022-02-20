@@ -1,4 +1,4 @@
-#root .welcome {
+#root .result {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,23 +11,16 @@
           justify-content: center;
 }
 
-#root .welcome .wrapper {
+#root .result .wrapper {
   width: 100%;
   height: 80vh;
-  margin: 10px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) 50% 50%/100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50%/100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))) 50% 50%/100%, url(https://media.giphy.com/media/l1J3UU9QBHDaGr052/giphy.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) 50% 50%/100%, url(https://media.giphy.com/media/l1J3UU9QBHDaGr052/giphy.gif);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
-#root .welcome .wrapper .info-icon {
-  position: absolute;
-  padding-top: 15px;
-  right: 15px;
-}
-
-#root .welcome .wrapper .title-container {
+#root .result .wrapper .result-container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,20 +37,26 @@
           flex-direction: column;
 }
 
-#root .welcome .wrapper .title-container .main-title {
-  font-size: 65px;
-  font-weight: bold;
+#root .result .wrapper .result-container .score-container .tell-score {
+  font-size: 3rem;
   color: white;
-  margin-bottom: 16px;
-}
-
-#root .welcome .wrapper .title-container .sub-title {
-  margin-bottom: 20px;
   font-weight: bold;
-  color: gray;
 }
 
-#root .welcome .wrapper .title-container .start-btn .game-start {
+#root .result .wrapper .result-container .score-container .score {
+  font-size: 10rem;
+  color: goldenrod;
+}
+
+#root .result .wrapper .result-container .score-container .msg {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: lightgray;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#root .result .wrapper .result-container .goback-btn .go-welcome {
   min-width: 10rem;
   font-size: 1.5rem;
   font-weight: bolder;
@@ -72,7 +71,7 @@
   transition: all 0.5s ease 0s;
 }
 
-#root .welcome .wrapper .title-container .start-btn .game-start:hover {
+#root .result .wrapper .result-container .goback-btn .go-welcome:hover {
   color: black;
   background-color: white;
 }

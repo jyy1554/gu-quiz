@@ -23,8 +23,8 @@ function Welcome() {
         <div className="title-container">
           <div className="main-title">구 이름 맞추기</div>
           <div className="sub-title">누가누가 서울 고수인가?!</div>
-          <div className="game-start" onClick={__gameStart}>
-            <Button variant="contained" size="large">게임시작</Button>
+          <div className="start-btn" onClick={__gameStart}>
+            <button className='game-start'>게임시작</button>
           </div>
         </div>
       </div>
