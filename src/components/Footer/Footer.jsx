@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <div class="ad-container ad-bottom">
+        <div className="ad-container ad-bottom">
           {/* <div class="ad-left">왼쪽</div>
           <div class="ad-right">오른쪽</div> */}
         </div>

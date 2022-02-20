@@ -7,10 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <head>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-        </head>
-        <div class="layout-container">
+        <div className="layout-container">
           <Header />
           <Welcome />
           <Footer />

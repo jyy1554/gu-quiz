@@ -45,9 +45,7 @@ export default function MouseOverPopover() {
         disableRestoreFocus
       >
         <Typography sx={{ p: 1 }}>
-          <div class="info-content">
-            크롬 브라우저를 사용하셔야 정상적으로 게임이 진행됩니다.
-          </div>
+          크롬 브라우저를 사용하셔야 정상적으로 게임이 진행됩니다.
         </Typography>
       </Popover>
     </div>
