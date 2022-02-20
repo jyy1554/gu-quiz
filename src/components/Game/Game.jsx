@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/index.css';
-import Button from '@mui/material/Button';
 import MouseOverPopover from './components/MouseOverPopover';
 
 function Game() {

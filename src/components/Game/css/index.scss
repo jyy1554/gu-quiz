@@ -1,3 +1,5 @@
+$gu-quiz-blue: #1976d2;
+
 #root {
   .game {
     height: 100vh;
@@ -45,7 +47,7 @@
           justify-content: center;
           border-radius: 2rem;
           width: 20rem;
-          background-color: rgba(250, 241, 241, 0.5);
+          background-color: rgba(250, 241, 241, 0.6);
 
           input {
             width: 100%;
@@ -73,15 +75,17 @@
             padding: 0.7rem 0.9rem;
             border-radius: 2rem;
             border: 2px solid white;
-            background-color: transparent;
-            color: white;
+            background-color: white;
+            opacity: 0.8;
+            color: gray;
             cursor: pointer;
             transition: all 0.5s ease 0s;
           }
 
           .submit-btn:hover {
-            color: black;
-            background-color: white;
+            color: white;
+            border-color: $gu-quiz-blue;
+            background-color: $gu-quiz-blue;
           }
         }
       }

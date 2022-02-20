@@ -1,52 +1,38 @@
 import * as React from 'react';
 import Popover from '@mui/material/Popover';
-import Typography from '@mui/material/Typography';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import Button from '@mui/material/Button';
 
 export default function MouseOverPopover() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handlePopoverOpen = (event) => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handlePopoverClose = () => {
+  const handleClose = () => {
     setAnchorEl(null);
   };
 
   const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
 
   return (
     <div>
-      <Typography
-        aria-owns={open ? 'mouse-over-popover' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={handlePopoverOpen}
-        onMouseLeave={handlePopoverClose}
-      >
+      <Button color="error" aria-describedby={id} onClick={handleClick} >
         <MapOutlinedIcon fontSize="large" htmlColor='lightgray' />
-      </Typography>
+      </Button>
       <Popover
-        id="mouse-over-popover"
-        sx={{
-          pointerEvents: 'none',
-        }}
+        id={id}
         open={open}
         anchorEl={anchorEl}
+        onClose={handleClose}
         anchorOrigin={{
           vertical: 'bottom',
           horizontal: 'left',
         }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        onClose={handlePopoverClose}
-        disableRestoreFocus
       >
-        <Typography sx={{ p: 1 }}>
-          서울 지역구 지도 띄우기
-        </Typography>
+        <img alt="사진" src="assets/game/map.jpg" />
       </Popover>
     </div>
   );
