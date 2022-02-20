@@ -1,0 +1,61 @@
+#root .welcome {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+#root .welcome .wrapper {
+  width: 100%;
+  height: 80vh;
+  margin: 10px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) 50% 50%/100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50%/100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
+  background-position: center;
+  background-size: contain;
+}
+
+#root .welcome .wrapper .info-icon {
+  position: absolute;
+  padding-top: 15px;
+  right: 15px;
+}
+
+#root .welcome .wrapper .title-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+}
+
+#root .welcome .wrapper .title-container .main-title {
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+#root .welcome .wrapper .title-container .sub-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: gray;
+}
+/*# sourceMappingURL=index.css.map */
