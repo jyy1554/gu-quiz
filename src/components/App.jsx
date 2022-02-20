@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Routes, Route } from "react-router-dom";
-import './App.css';
 import Footer from './Footer/Footer';
+import Game from './Game/Game';
 import Header from './Header/Header';
 import Welcome from './Welcome/Welcome';
 class App extends Component {
@@ -11,6 +11,7 @@ class App extends Component {
         <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
         <Footer />
       </div>

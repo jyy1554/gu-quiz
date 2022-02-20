@@ -1,0 +1,107 @@
+#root .game {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .game .wrapper {
+  width: 100%;
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) 50% 50%/100%, url(https://www1.president.go.kr/images/cheongwadae/pic_introduction_01_01.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50%/100%, url(https://www1.president.go.kr/images/cheongwadae/pic_introduction_01_01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#root .game .wrapper .map-icon {
+  position: absolute;
+  padding-top: 15px;
+  right: 15px;
+}
+
+#root .game .wrapper .quiz-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root .game .wrapper .quiz-container .quiz {
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+#root .game .wrapper .quiz-container .hidden-hint {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+#root .game .wrapper .quiz-container .answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp {
+  width: 170px;
+  border-radius: 5px;
+  height: 42.25px;
+  border: none;
+  margin-right: 20px;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 0 8px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.7;
+  font-size: large;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp input::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+#root .game .wrapper .quiz-container .answer-container .answer-inp input::placeholder {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=index.css.map */
