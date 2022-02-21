@@ -6,7 +6,7 @@
   background-color: lightgray;
 }
 
-#root .footer .ad-container {
+#root .footer .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
