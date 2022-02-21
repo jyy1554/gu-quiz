@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gu-quiz/static/css/main.f1eb940c.css",
+    "main.js": "/gu-quiz/static/js/main.02f6c824.js",
+    "index.html": "/gu-quiz/index.html",
+    "main.f1eb940c.css.map": "/gu-quiz/static/css/main.f1eb940c.css.map",
+    "main.02f6c824.js.map": "/gu-quiz/static/js/main.02f6c824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1eb940c.css",
+    "static/js/main.02f6c824.js"
+  ]
+}
