@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# 초기 셋팅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+$ yarn install
 
 ## Available Scripts
 
