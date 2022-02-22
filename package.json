@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://jyy1554.github.io/gu-quiz/",
+  "homepage": "https://jyy1554.github.io/gu-quiz",
   "eslintConfig": {
     "extends": [
       "react-app",
