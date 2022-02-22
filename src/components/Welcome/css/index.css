@@ -45,7 +45,7 @@
 }
 
 #root .welcome .wrapper .title-container .main-title {
-  font-size: 65px;
+  font-size: 5rem;
   font-weight: bold;
   color: white;
   margin-bottom: 16px;
@@ -70,10 +70,50 @@
   cursor: pointer;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  -webkit-animation: 1.5s infinite normal heartbeat;
+          animation: 1.5s infinite normal heartbeat;
 }
 
 #root .welcome .wrapper .title-container .start-btn .game-start:hover {
   color: black;
   background-color: white;
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
