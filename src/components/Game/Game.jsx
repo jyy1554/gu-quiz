@@ -6,7 +6,7 @@ import MouseOverPopover from './components/MouseOverPopover';
 function Game() {
   const navigate = useNavigate();
   const [score, setScore] = useState(0);
-  const [userInput, setUserInput] = useState(undefined);
+  const [text, setText] = useState('');
 
   const [gus, setGus] = useState([]);
   const [display, setDisplay] = useState([]);
@@ -51,7 +51,7 @@ function Game() {
   const __doSubmit = useCallback(
     (e) => {
       e.preventDefault(); //새로고침되지 않기 위해
-      if (userInput === display.answer && gus.length) {
+      if (text === display.answer && gus.length) {
         const _score = score + 1;
         setScore(_score);
         console.log(`score: ${_score}`);
@@ -63,7 +63,8 @@ function Game() {
       } else {
         __goResult();
       }
-    }, [userInput, display, gus, score, __goResult]
+      setText('');
+    }, [text, display, gus, score, __goResult]
   );
 
 
@@ -82,8 +83,8 @@ function Game() {
           <div className='gu-name'>{display.name}</div>
           <div className='hidden-hint'>힌트 : 숨겨진 힌트</div>
           <form className='answer-container' onSubmit={__doSubmit}>
-            <input type='text' placeholder='지역구를 입력하세요'
-              onBlur={(e) => setUserInput(e.target.value)} required />
+            <input type='text' placeholder='지역구를 입력하세요' value={text}
+              onChange={(e) => setText(e.target.value)} required />
             <button className='submit-btn' type='submit'>입력</button>
           </form>
         </div>
