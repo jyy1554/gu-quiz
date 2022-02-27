@@ -41,11 +41,13 @@
   font-size: 3rem;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 #root .result .wrapper .result-container .score-container .score {
   font-size: 10rem;
   color: goldenrod;
+  text-align: center;
 }
 
 #root .result .wrapper .result-container .score-container .msg {

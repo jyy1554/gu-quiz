@@ -2,10 +2,12 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/index.css';
 import MouseOverPopover from './components/MouseOverPopover';
+import ShowScore from './containers/ShowScore';
+import { useDispatch } from 'react-redux';
 
 function Game() {
   const navigate = useNavigate();
-  const [score, setScore] = useState(0);
+  const dispatch = useDispatch(); //점수를 Result 컴포넌트에 넘겨주기 위해
   const [text, setText] = useState('');
 
   const [gus, setGus] = useState([]);
@@ -51,20 +53,25 @@ function Game() {
   const __doSubmit = useCallback(
     (e) => {
       e.preventDefault(); //새로고침되지 않기 위해
-      if (text === display.answer && gus.length) {
-        const _score = score + 1;
-        setScore(_score);
-        console.log(`score: ${_score}`);
 
+      if (text === display.answer && gus.length) {
+        dispatch({
+          type : 'CORRECT'
+        });
         const _gus = gus.slice(1);
-        setGus(_gus);
         setDisplay(gus[0]);
+        setGus(_gus);
         console.log(`gus length: ${gus.length}`);
       } else {
+        if (text === display.answer) {
+          dispatch({
+            type : 'CORRECT'
+          });
+        }
         __goResult();
       }
       setText('');
-    }, [text, display, gus, score, __goResult]
+    }, [text, display, gus, dispatch, __goResult]
   );
 
 
@@ -73,8 +80,7 @@ function Game() {
       <div className='wrapper'>
         <img className='gu-img' src={display.src} alt='사진' />
         <div className="score-container">
-          <div className='ur-score-is'>현재 점수</div>
-          <div className='score'>{score}</div>
+          <ShowScore />
         </div>
         <span className="map-icon">
           <MouseOverPopover />
