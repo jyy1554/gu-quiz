@@ -165,4 +165,13 @@
   border-color: #1976d2;
   background-color: #1976d2;
 }
+
+@media (max-width: 480px) {
+  #root .game .wrapper .quiz-container .gu-name {
+    font-size: 50px;
+  }
+  #root .game .wrapper .quiz-container .answer-container {
+    width: 18rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

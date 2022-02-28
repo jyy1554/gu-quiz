@@ -79,3 +79,17 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #root {
+    .welcome {
+      .wrapper {
+        .title-container {
+          .main-title {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}
