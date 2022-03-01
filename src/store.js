@@ -5,6 +5,8 @@ export default createStore(function(state, action) {
         return {
             score:0
         }
+    }else if (action.type === 'START') {
+        return {...state, score: 0}
     }else if (action.type === 'CORRECT') {
         return {...state, score: state.score + 1}
     }

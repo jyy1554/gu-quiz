@@ -161,6 +161,9 @@ function Game() {
     items.sort(() => Math.random() - 0.5);
     setDisplay(items[0]);
     setGus(items.slice(1, numOfProbs));
+    dispatch({
+      type : 'START'
+    });
   }, [])
 
   const __goResult = useCallback(
