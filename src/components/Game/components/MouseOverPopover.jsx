@@ -20,7 +20,7 @@ export default function MouseOverPopover() {
   return (
     <div>
       <Button aria-describedby={id} onClick={handleClick} >
-        <MapOutlinedIcon fontSize="large" htmlColor='lightgray' />
+        <MapOutlinedIcon sx={{ fontSize: 38}} htmlColor='lightgray' />
       </Button>
       <Popover
         id={id}

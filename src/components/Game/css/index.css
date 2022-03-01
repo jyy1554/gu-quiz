@@ -57,8 +57,8 @@
 
 #root .game .wrapper .map-icon {
   position: absolute;
-  padding-top: 15px;
-  left: 15px;
+  padding-top: 20px;
+  left: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 2;
@@ -83,6 +83,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 50px;
   z-index: 2;
 }
 
@@ -90,7 +91,9 @@
   font-size: 65px;
   font-weight: bold;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  z-index: inherit;
 }
 
 #root .game .wrapper .quiz-container .hidden-hint {
@@ -99,7 +102,12 @@
   color: gray;
 }
 
-#root .game .wrapper .quiz-container .answer-container {
+#root .game .wrapper .quiz-container .input-and-result {
+  z-index: 2;
+  height: 150px;
+}
+
+#root .game .wrapper .quiz-container .input-and-result .answer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,11 +119,10 @@
           justify-content: center;
   border-radius: 2rem;
   width: 20rem;
-  background-color: rgba(250, 241, 241, 0.7);
-  z-index: 2;
+  background-color: rgba(250, 241, 241, 0.6);
 }
 
-#root .game .wrapper .quiz-container .answer-container input {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input {
   width: 100%;
   height: 100%;
   border: none;
@@ -125,27 +132,27 @@
   padding: 0px 20px;
 }
 
-#root .game .wrapper .quiz-container .answer-container input::-webkit-input-placeholder {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input::-webkit-input-placeholder {
   color: #5e5b5b;
 }
 
-#root .game .wrapper .quiz-container .answer-container input:-ms-input-placeholder {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input:-ms-input-placeholder {
   color: #5e5b5b;
 }
 
-#root .game .wrapper .quiz-container .answer-container input::-ms-input-placeholder {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input::-ms-input-placeholder {
   color: #5e5b5b;
 }
 
-#root .game .wrapper .quiz-container .answer-container input::placeholder {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input::placeholder {
   color: #5e5b5b;
 }
 
-#root .game .wrapper .quiz-container .answer-container input:focus {
+#root .game .wrapper .quiz-container .input-and-result .answer-container input:focus {
   outline: none;
 }
 
-#root .game .wrapper .quiz-container .answer-container .submit-btn {
+#root .game .wrapper .quiz-container .input-and-result .answer-container .submit-btn {
   min-width: 6rem;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -160,13 +167,27 @@
   transition: all 0.5s ease 0s;
 }
 
-#root .game .wrapper .quiz-container .answer-container .submit-btn:hover {
+#root .game .wrapper .quiz-container .input-and-result .answer-container .submit-btn:hover {
   color: white;
   border-color: #1976d2;
   background-color: #1976d2;
 }
 
+#root .game .wrapper .quiz-container .input-and-result .ox-icon {
+  z-index: 3;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
 @media (max-width: 480px) {
+  #root .game .wrapper .score-container .ur-score-is {
+    font-size: 1rem;
+  }
+  #root .game .wrapper .score-container .score {
+    font-size: 2rem;
+  }
   #root .game .wrapper .quiz-container .gu-name {
     font-size: 50px;
   }
