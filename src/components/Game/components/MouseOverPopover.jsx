@@ -32,7 +32,7 @@ export default function MouseOverPopover() {
           horizontal: 'left',
         }}
       >
-        <img width="100%" src="assets/game/map.jpg" alt="사진" />
+        <img width="100%" src="assets/map.jpg" alt="사진" />
       </Popover>
     </div>
   );
