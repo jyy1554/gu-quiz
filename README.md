@@ -13,10 +13,14 @@
 4. 게임이 끝난 후 재도전 하고싶다면 '메인으로'라는 버튼을 클릭한다.
 
   
+  
+  
 ## ver0.1.1
 정답을 입력하였을 경우, 입력창이 사라지고 효과음과 함께 스마일 아이콘이 나타남
-<img width="883" alt="ver011스크린샷" src="https://user-images.githubusercontent.com/74459565/156127731-564b09c9-1f58-4e2b-8541-2c0b9bf6b468.png">
+<img width="500" alt="ver011스크린샷" src="https://user-images.githubusercontent.com/74459565/156127731-564b09c9-1f58-4e2b-8541-2c0b9bf6b468.png">
 
+  
+  
   
   
 ## ver0.1.0
