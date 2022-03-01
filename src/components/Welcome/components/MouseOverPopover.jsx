@@ -45,7 +45,7 @@ export default function MouseOverPopover() {
         disableRestoreFocus
       >
         <Typography sx={{ p: 1 }}>
-          크롬 브라우저 사용을 권장합니다..
+          크롬 브라우저 사용을 권장합니다.
         </Typography>
       </Popover>
     </div>
