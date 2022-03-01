@@ -30,18 +30,17 @@
   position: absolute;
   padding-top: 20px;
   right: 20px;
+  text-align: center;
   z-index: 2;
 }
 
 #root .game .wrapper .score-container .ur-score-is {
-  text-align: center;
   font-size: 1.5rem;
   font-weight: bolder;
   color: white;
 }
 
 #root .game .wrapper .score-container .score {
-  text-align: center;
   font-size: 2.5rem;
   font-weight: bolder;
   color: white;
@@ -171,14 +170,6 @@
   color: white;
   border-color: #1976d2;
   background-color: #1976d2;
-}
-
-#root .game .wrapper .quiz-container .input-and-result .ox-icon {
-  z-index: 3;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-  -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
 }
 
 @media (max-width: 480px) {
