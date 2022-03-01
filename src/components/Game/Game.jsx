@@ -107,11 +107,6 @@ function Game() {
       answer: '영등포구'
     },
     {
-      name: '여의도',
-      src: "assets/game/여의도.jpeg",
-      answer: '영등포구'
-    },
-    {
       name: '올림픽공원',
       src: "assets/game/올림픽공원.jpeg",
       answer: '송파구'
