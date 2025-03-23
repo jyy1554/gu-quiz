@@ -1,7 +1,6 @@
 # 서울 지역구 맞추기 게임 (구 이름 맞추기)
 
 * 결과물 : <a href="https://jyy1554.github.io/gu-quiz/">바로가기<a>
-* 주저리주저리 : <a href="https://blog.naver.com/uyon77/222660387973">필자의 블로그<a>
 
 이 프로젝트는 필자가 침착맨 유튜브를 시청 중 <a href="https://www.higherlowerkorea.com/">더많이 더적게<a>라는 게임에 감명받아 진행한 사이드 프로젝트입니다.
 
